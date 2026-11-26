@@ -1,413 +1,117 @@
 <div align="center">
 
-# 🐍 Python Learning Journey
-### *From Basics to AI Development*
+# Python Basics Learning Journey
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&duration=2500&pause=1000&color=3776AB&center=true&vCenter=true&multiline=true&width=800&height=100&lines=Building+Strong+Python+Foundations;Clean+Code+%7C+Professional+Standards+%7C+AI+Ready;Every+Line+Matters%2C+Every+Concept+Counts" alt="Typing SVG" />
+**Twenty-one small Python scripts I wrote while learning the language, from `print` to a billing system.**
 
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Status](https://img.shields.io/badge/Journey-In_Progress-success?style=for-the-badge)
-![Code Quality](https://img.shields.io/badge/Code-Production_Ready-brightgreen?style=for-the-badge)
-![AI Focus](https://img.shields.io/badge/Focus-AI_Development-orange?style=for-the-badge)
+<img src="https://img.shields.io/badge/Python-3-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3">
+<img src="https://img.shields.io/badge/dependencies-none-2ea44f?style=flat-square" alt="No dependencies">
+<img src="https://img.shields.io/badge/scripts-21-555555?style=flat-square" alt="21 scripts">
+<img src="https://img.shields.io/github/last-commit/ishtiaq-ahmed-dev/PYTHON_Basics_Learning_Journey?style=flat-square" alt="Last commit">
 
-</div>
-
----
-
-## 💡 Philosophy
-
-> **"This is not just practice code. This is professional-grade Python."**
-
-This repository represents my journey in mastering Python fundamentals with a **professional mindset**. Every script is crafted with the same standards used in production environments—modular, documented, tested, and scalable.
-
-<div align="center">
-
-### 🎯 The Standard
-
-| ✅ Modular Design | ✅ Professional Docs | ✅ Error Handling | ✅ Clean Code |
-|:---:|:---:|:---:|:---:|
-| Reusable functions | Clear docstrings | Robust validation | PEP 8 compliant |
+[Overview](#overview) · [Contents](#contents) · [Run locally](#run-locally) · [What's next](#whats-next) · [Author](#author)
 
 </div>
 
 ---
 
-## 🌟 What Makes This Different
+## Overview
 
-This isn't your typical "beginner scripts" collection. Here's why:
+This is where I practised Python fundamentals: input and output, operators, strings, lists, conditionals and loops, then a few small programs that put those pieces together.
 
-```python
-# ❌ Typical Beginner Code
-x = int(input("Enter number: "))
-y = int(input("Enter another: "))
-print(x + y)
+Each script covers one topic. Most wrap their logic in a function with a docstring, check user input, and catch bad values with `try`/`except` instead of crashing. Everything uses the standard library only (`collections`, `datetime`, `random`).
 
-# ✅ Professional Standard (What You'll Find Here)
-def calculate_sum(num1: int, num2: int) -> int:
-    """
-    Calculates the sum of two integers.
-    
-    Args:
-        num1: First integer
-        num2: Second integer
-    
-    Returns:
-        Sum of the two integers
-    """
-    return num1 + num2
+## Contents
 
-def main():
-    try:
-        num1 = int(input("Enter first number: "))
-        num2 = int(input("Enter second number: "))
-        result = calculate_sum(num1, num2)
-        print(f"Result: {result}")
-    except ValueError:
-        print("Error: Please enter valid integers")
+**Basics and input/output**
 
-if __name__ == "__main__":
-    main()
-```
+| File | What it does |
+| --- | --- |
+| [`hello_world.PY`](hello_world.PY) | First script: prints a greeting |
+| [`name_greeter.py`](name_greeter.py) | Reads a first and last name, cleans them up, greets the user |
+| [`simple_addition.py`](simple_addition.py) | Adds two integers and rejects non-numeric input |
 
----
+**Operators**
 
-## 📚 Repository Structure
+| File | What it does |
+| --- | --- |
+| [`augmented_assignments.py`](augmented_assignments.py) | Walks through `+=`, `-=`, `*=`, `/=`, `%=`, `**=` and `//=` |
+| [`relational_operators.py`](relational_operators.py) | Compares two numbers with all six comparison operators |
+| [`modulus_calculator.py`](modulus_calculator.py) | Remainder of two numbers, with a divide-by-zero check |
+| [`exponent_calculator.py`](exponent_calculator.py) | Raises a base to a power and formats large results |
 
-<details open>
-<summary><b>🔤 Data Structures & String Operations</b></summary>
+**Strings and lists**
 
-<br>
+| File | What it does |
+| --- | --- |
+| [`string_manipulation.py`](string_manipulation.py) | Indexing, slicing, repetition, concatenation, multiline strings |
+| [`string_indexer.py`](string_indexer.py) | Prints each character's index, then swaps one character to show strings are immutable |
+| [`list_operations.py`](list_operations.py) | List basics, an element-by-element comparison with `zip()`, and a student marks lookup |
+| [`list_average_calculator.py`](list_average_calculator.py) | Sum, count and average of a list |
 
-| File | Concept | Key Takeaway |
-|------|---------|--------------|
-| `string_manipulation.py` | Slicing, repetition, f-strings | Building dynamic text interfaces |
-| `string_indexer.py` | Character mapping & enumeration | Dictionary comprehensions in action |
-| `list_operations.py` | Slicing, membership, comparison | Working with Python sequences |
-| `list_average_calculator.py` | Aggregation functions | Clean data processing patterns |
+**Conditionals and loops**
 
-**Skills Developed:** String formatting • List comprehensions • Data aggregation • Index manipulation
+| File | What it does |
+| --- | --- |
+| [`if_else_Conditions.py`](if_else_Conditions.py) | Classifies a number with an `if`/`elif`/`else` ladder |
+| [`range_and_for_loops.py`](range_and_for_loops.py) | `range()` with steps and in reverse, plus a multiplication table |
+| [`control_flow_and_age.py`](control_flow_and_age.py) | `while` loops, star patterns, enrollment percentages, and exact age from a birth date using `datetime` |
+| [`marks_percentage_calculator.py`](marks_percentage_calculator.py) | Collects marks for seven papers in a loop and works out the percentage |
 
-</details>
+**Small programs**
 
-<details>
-<summary><b>🧮 Core Logic & Arithmetic</b></summary>
+| File | What it does |
+| --- | --- |
+| [`age_time_converter.py`](age_time_converter.py) | Converts an age in years to months, days, hours, minutes and seconds |
+| [`newtons_second_law.py`](newtons_second_law.py) | Calculates force from mass and acceleration (F = m × a) |
+| [`student_grade_calculator.py`](student_grade_calculator.py) | Totals three subject marks, then assigns a percentage and grade |
+| [`billing_system.py`](billing_system.py) | Shop checkout: item menu, tiered discount from 0% to 20%, 8.5% tax, final bill |
+| [`election_simulator.py`](election_simulator.py) | Counts 20 votes between two candidates with `collections.Counter` |
+| [`multi_topic_demo.py`](multi_topic_demo.py) | Loops, patterns, initials, an ATM simulator, and a two-player elemental battle game using `random` |
 
-<br>
+## Run locally
 
-| File | Concept | Key Takeaway |
-|------|---------|--------------|
-| `simple_addition.py` | Basic I/O & validation | Input sanitization fundamentals |
-| `augmented_assignments.py` | Compound operators | Code efficiency techniques |
-| `modulus_calculator.py` | Remainder operations | Edge case handling (division by zero) |
-| `exponent_calculator.py` | Power calculations | Working with large numbers |
-| `relational_operators.py` | Boolean logic | Comparison operators mastery |
-
-**Skills Developed:** Type conversion • Error handling • Operator precedence • Mathematical precision
-
-</details>
-
-<details>
-<summary><b>🔄 Control Flow & Iteration</b></summary>
-
-<br>
-
-| File | Concept | Key Takeaway |
-|------|---------|--------------|
-| `range_and_for_loops.py` | For loops, range() | Iteration patterns & step control |
-| `number_evaluator.py` | Conditional logic | If-elif-else decision trees |
-| `marks_percentage_calculator.py` | Loop + accumulation | Collecting & processing data |
-| `control_flow_and_age.py` | While loops, datetime | Complex flow control |
-
-**Skills Developed:** Loop design • Conditional branching • Pattern recognition • Time calculations
-
-</details>
-
-<details>
-<summary><b>🎮 Real-World Applications</b></summary>
-
-<br>
-
-| File | Concept | Key Takeaway |
-|------|---------|--------------|
-| `election_simulator.py` | Vote counting system | Using Counter from collections |
-| `multi_topic_demo.py` | ATM + Battle Game | State management & OOP concepts |
-| `age_time_converter.py` | Unit conversion | Working with constants & calculations |
-| `name_greeter.py` | String processing | Input cleaning techniques |
-| `hello_world.py` | Entry points | `if __name__ == "__main__"` pattern |
-
-**Skills Developed:** Collections module • State management • Input sanitization • Application structure
-
-</details>
-
----
-
-## 🎓 Learning Path
-
-```
-📖 Foundation               🔨 Practice              🚀 Mastery
-    ↓                          ↓                        ↓
-Syntax & Types  →  Data Structures  →  Control Flow  →  Applications
-    ↓                          ↓                        ↓
-Variables           Lists              Loops          ATM Simulator
-Operators           Strings            Conditions     Election System
-I/O                 Dictionaries       Functions      Game Logic
-```
-
-### Progress Tracker
-
-- [x] **Week 1-2:** Python Syntax & Basic I/O
-- [x] **Week 3-4:** Data Structures (Lists, Strings, Dicts)
-- [x] **Week 5-6:** Control Flow & Loops
-- [x] **Week 7-8:** Functions & Modular Programming
-- [ ] **Week 9-10:** File I/O & Exception Handling
-- [ ] **Week 11-12:** Object-Oriented Programming
-- [ ] **Week 13-14:** Advanced Topics (Decorators, Generators)
-- [ ] **Week 15+:** Python for Data Science & AI
-
----
-
-## 🚀 Quick Start
-
-### Prerequisites
-```bash
-# Check Python version (3.x required)
-python3 --version
-
-# Verify pip installation
-pip3 --version
-```
-
-### Running the Code
+You need Python 3. There is nothing to install.
 
 ```bash
-# Clone the repository
-git clone https://github.com/ishtiaq-ahmed-dev/Python-Fundamentals.git
-
-# Navigate to directory
-cd Python-Fundamentals
-
-# Run any script
-python3 script_name.py
-
-# Example: Run the election simulator
-python3 election_simulator.py
+git clone https://github.com/ishtiaq-ahmed-dev/PYTHON_Basics_Learning_Journey.git
+cd PYTHON_Basics_Learning_Journey
+python billing_system.py
 ```
 
-### Exploring the Code
+Most scripts ask for input in the terminal.
+
+Some files only define a function and don't call it, so running them directly prints nothing. Load them with `-i` and call the function yourself:
 
 ```bash
-# View file contents
-cat string_manipulation.py
-
-# Run with detailed output
-python3 -v script_name.py
-
-# Check code style (install flake8 first)
-pip3 install flake8
-flake8 script_name.py
+python -i age_time_converter.py
+>>> convert_age_to_time_units()
 ```
 
----
+| File | Function to call |
+| --- | --- |
+| `age_time_converter.py` | `convert_age_to_time_units()` |
+| `augmented_assignments.py` | `demonstrate_augmented_assignments()` |
+| `exponent_calculator.py` | `calculate_power()` |
+| `if_else_Conditions.py` | `evaluate_number()` |
+| `list_average_calculator.py` | `calculate_average_of_numbers()` |
+| `newtons_second_law.py` | `calculate_force()` |
+| `relational_operators.py` | `demonstrate_comparisons()` |
+| `string_indexer.py` | `demonstrate_string_indexing()` |
+| `string_manipulation.py` | `demonstrate_string_features()` |
+| `multi_topic_demo.py` | `run_atm_simulator()`, `run_elemental_game()`, or any other function in the file |
 
-## 🎯 Learning Outcomes
+## What's next
 
-By working through this repository, you will:
+Topics I haven't covered here yet:
 
-<table>
-<tr>
-<td width="50%">
+- File I/O and exception handling in more depth
+- Object-oriented programming
+- Decorators and generators
+- Python for data science and AI
 
-### 💪 Technical Skills
-- ✅ Master Python syntax & semantics
-- ✅ Build robust, error-resistant code
-- ✅ Write professional documentation
-- ✅ Implement clean code principles
-- ✅ Handle edge cases gracefully
+## Author
 
-</td>
-<td width="50%">
+**Ishtiaq Ahmed**, BS Artificial Intelligence student at IMSciences Peshawar.
 
-### 🧠 Conceptual Understanding
-- ✅ Strong DSA foundations
-- ✅ Algorithmic thinking patterns
-- ✅ Problem decomposition skills
-- ✅ Code optimization techniques
-- ✅ Real-world application design
-
-</td>
-</tr>
-</table>
-
----
-
-## 🛠️ Code Quality Standards
-
-Every script in this repository follows these principles:
-
-### 📐 Structure
-```python
-"""
-Module-level docstring explaining purpose
-"""
-
-# Imports
-import module
-
-# Constants
-CONSTANT_NAME = value
-
-# Functions with docstrings
-def function_name(param: type) -> return_type:
-    """Clear description with Args and Returns"""
-    pass
-
-# Main execution
-if __name__ == "__main__":
-    main()
-```
-
-### ✨ Features
-- **Type Hints:** Clear parameter and return types
-- **Docstrings:** Google-style documentation
-- **Error Handling:** Try-except blocks where needed
-- **Constants:** UPPERCASE naming for immutables
-- **PEP 8:** Consistent formatting throughout
-
----
-
-## 📈 Project Highlights
-
-### 🗳️ Election Simulator
-```python
-from collections import Counter
-
-def simulate_election(votes: list) -> dict:
-    """Tallies votes and determines winner"""
-    vote_count = Counter(votes)
-    winner = vote_count.most_common(1)[0]
-    return {
-        'winner': winner[0],
-        'votes': winner[1],
-        'results': dict(vote_count)
-    }
-```
-**Concepts:** Collections module • Dictionary operations • Data aggregation
-
-### 🏧 ATM Simulator
-```python
-class ATM:
-    """Simple ATM with balance management"""
-    def __init__(self, initial_balance: float = 0):
-        self._balance = initial_balance
-    
-    def withdraw(self, amount: float) -> bool:
-        """Withdraw with validation"""
-        if amount > self._balance:
-            return False
-        self._balance -= amount
-        return True
-```
-**Concepts:** Classes • Encapsulation • State management
-
----
-
-## 🎓 From Fundamentals to AI
-
-This repository is the foundation for my AI development journey:
-
-```
-Python Fundamentals (HERE)
-         ↓
-    NumPy & Pandas
-         ↓
-Data Visualization (Matplotlib, Seaborn)
-         ↓
-    Machine Learning (scikit-learn)
-         ↓
-Deep Learning (TensorFlow, PyTorch)
-         ↓
-    AI Applications
-```
-
----
-
-## 📖 Recommended Learning Resources
-
-### Documentation
-- [Official Python Docs](https://docs.python.org/3/)
-- [PEP 8 Style Guide](https://pep8.org/)
-- [Python Type Hints](https://docs.python.org/3/library/typing.html)
-
-### Practice Platforms
-- [LeetCode Python](https://leetcode.com/)
-- [HackerRank Python](https://www.hackerrank.com/domains/python)
-- [Codewars](https://www.codewars.com/)
-
-### Books I'm Reading
-- "Python Crash Course" by Eric Matthes
-- "Fluent Python" by Luciano Ramalho
-- "Effective Python" by Brett Slatkin
-
----
-
-## 🤝 Connect & Collaborate
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/Ishtiaq-Ahmed)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ishtiaq-ahmed-dev)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:iashtiaqkhattak@gmail.com)
-
-**Have suggestions? Found a better approach? Let's discuss!**
-
-</div>
-
----
-
-## 👨‍💻 About Me
-
-**Ishtiaq Ahmed**  
-*Artificial Intelligence Student | Python & C++ Developer*
-
-> *"Building today's Python skills for tomorrow's AI innovations"*
-
-### My Journey
-- 🎓 AI Student with passion for clean code
-- 🐍 Python practitioner focused on professional standards
-- 🤖 Future Machine Learning & Deep Learning Engineer
-- 💡 Believer in learning fundamentals the right way
-
----
-
-## 📜 License & Usage
-
-```
-MIT License
-
-This repository is for educational purposes.
-Feel free to:
-  ✓ Learn from the code
-  ✓ Fork and experiment
-  ✓ Use as reference material
-  ✓ Share with fellow learners
-```
-
----
-
-<div align="center">
-
-### 💭 Remember
-
-*"Good code is written once, read a thousand times"*
-
-**Every script here is written to be understood, not just to work.**
-
----
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=3776AB&height=100&section=footer" width="100%"/>
-
-**⭐ Star this repo if it helps your Python journey!**
-
-*Last Updated: January 2026*
-
-</div>
+[GitHub](https://github.com/ishtiaq-ahmed-dev) · [LinkedIn](https://www.linkedin.com/in/ishtiaq-ahmed-90a70b35a/) · [iashtiaqkhattak@gmail.com](mailto:iashtiaqkhattak@gmail.com)
